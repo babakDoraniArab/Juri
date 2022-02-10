@@ -67,3 +67,4 @@ create your aws context
 
 `aws eks --region eu-west-1 update-kubeconfig --name eks --profile default`
 
+you have to add security group id named(nginx) to your k8s_services file before do terraform apply in the k8s folder 
