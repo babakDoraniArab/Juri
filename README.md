@@ -19,6 +19,14 @@ and also it needs certificates.
 
     to add dns name to route53 we can use `external DNS`
 
+### tip 
+
+security groups are created and I've connected Kubernetes to the specified security groups with annotations. it goes and create a LoadBalancer on AWS and connect it to the Kubernetes.
+
+### other solution
+
+    there are other solutions too. we can go for ALB with ingress controller . we need extra deployment for ingress controller 
+
 ## create kub config 
 check your kube config first 
 
