@@ -44,16 +44,21 @@ and also it needs certificates.
       
 `load balancer with K8s`
 
-### tip 
+## tip 
 
 security groups are created and I've connected Kubernetes to the specified security groups with annotations.
 it goes and create a LoadBalancer on AWS and connect it to the Kubernetes.
 
-### other solution
+# other solution
 
+### ALB and Ingress controller
 there are other solutions too. we can go for `ALB` with `ingress controller` . we need extra deployment for ingress controller 
+### ECS and ECR
+we can go for ECS and ECR but I prefer to use EKS and K8s because they are more powerful and we can do anything with this infrastructure .I prefer to use ECS in small projects
+
 
 ## create kub config 
+before apply your K8s tf files please configure your kube config file.
 check your kube config first 
 
 `cat ~/.kube/config`
